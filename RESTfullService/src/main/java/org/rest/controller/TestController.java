@@ -12,11 +12,11 @@ public class TestController {
 
     @Autowired
     private ObjectMapper objectMapper;
-
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String main() {
-        return "index";
-    }
+//
+//    @RequestMapping(value = "/", method = RequestMethod.GET)
+//    public String main() {
+//        return "index";
+//    }
 
 
 }
