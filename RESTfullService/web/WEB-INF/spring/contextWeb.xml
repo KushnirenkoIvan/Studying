@@ -13,7 +13,7 @@
 
     <import resource="mvc-dispatcher-servlet.xml"/>
 
-    <context:component-scan base-package="org"/>
+    <context:component-scan base-package="org.rest"/>
 
     <mvc:resources mapping="/**" location="/"/>
     <mvc:annotation-driven/>

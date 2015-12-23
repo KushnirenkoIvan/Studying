@@ -12,6 +12,7 @@
 
 
     <artifactId>RESTfullService</artifactId>
+    <packaging>war</packaging>
 
     <properties>
         <jdk>1.8</jdk>
@@ -24,7 +25,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.2.0.RELEASE</version>
+            <version>4.2.4.RELEASE</version>
         </dependency>
 
         <dependency>
