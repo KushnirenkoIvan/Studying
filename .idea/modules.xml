@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RESTfullService/RESTfullService.iml" filepath="$PROJECT_DIR$/RESTfullService/RESTfullService.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying.iml" filepath="$PROJECT_DIR$/studying.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/studying.iml" filepath="$PROJECT_DIR$/.idea/studying.iml" />
     </modules>
   </component>
 </project>

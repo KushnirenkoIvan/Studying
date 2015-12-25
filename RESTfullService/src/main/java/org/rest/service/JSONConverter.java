@@ -1,7 +1,5 @@
 package org.rest.service;
 
-
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -44,19 +42,6 @@ public class JSONConverter {
             }
         }
         return objectNode;
-    }
-
-
-    public static void main(String[] args) {
-        TestInfo testInfo = new TestInfo(4565, new Date(), "Polnaja Lazha!", 600);
-        User user = new User(2135434, "user", 22);
-        Data data = new Data(122, 2135434, "Some_data", new Date());
-
-        ObjectNode objectNode = new JSONConverter().createCustomJSON(testInfo);
-        System.out.println(objectNode);
-
-        ObjectNode objectNode2 = new JSONConverter().toJson(user);
-        System.out.println(objectNode2);
     }
 
 }

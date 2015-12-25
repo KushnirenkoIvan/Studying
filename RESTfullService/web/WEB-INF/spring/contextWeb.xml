@@ -15,8 +15,8 @@
 
     <context:component-scan base-package="org.rest"/>
 
-    <mvc:resources mapping="/**" location="/"/>
+    <mvc:resources mapping="*.html" location="/resources/html/"/>
+    <mvc:resources mapping="*.js" location="/resources/js/"/>
     <mvc:annotation-driven/>
-
 
 </beans>
