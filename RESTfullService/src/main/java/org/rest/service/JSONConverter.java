@@ -3,13 +3,12 @@ package org.rest.service;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.rest.entities.Data;
-import org.rest.entities.TestInfo;
-import org.rest.entities.User;
+import org.entities.Data;
+import org.entities.TestInfo;
+import org.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.Iterator;
 
 @Service

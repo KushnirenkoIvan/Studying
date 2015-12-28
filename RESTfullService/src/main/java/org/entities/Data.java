@@ -1,4 +1,4 @@
-package org.rest.entities;
+package org.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

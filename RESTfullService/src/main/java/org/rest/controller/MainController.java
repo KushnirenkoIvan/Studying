@@ -3,7 +3,7 @@ package org.rest.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.rest.entities.User;
+import org.entities.User;
 import org.rest.service.JSONConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
