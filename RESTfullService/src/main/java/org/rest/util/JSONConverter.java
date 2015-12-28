@@ -1,4 +1,4 @@
-package org.rest.service;
+package org.rest.util;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
