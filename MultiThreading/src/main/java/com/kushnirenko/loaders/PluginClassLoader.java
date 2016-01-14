@@ -2,18 +2,14 @@ package com.kushnirenko.loaders;
 
 
 import org.apache.log4j.Logger;
-import sun.misc.VM;
 
-import java.io.*;
-import java.nio.ByteBuffer;
-import java.security.CodeSource;
-import java.security.ProtectionDomain;
-import java.security.cert.Certificate;
-import java.util.Arrays;
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
@@ -41,15 +37,13 @@ import java.util.jar.JarFile;
 
 public class PluginClassLoader extends ClassLoader {
 
-    // The "default" domain. Set as the default ProtectionDomain on newly
-    // created classes.
-    private final ProtectionDomain defaultDomain =
-            new ProtectionDomain(new CodeSource(null, (Certificate[]) null),
-                    null, this, null);
-
-
     private final static Logger log = Logger.getLogger(PluginClassLoader.class);
 
+    /**
+     * Default folder to scanning for plugins.
+     */
+    private static final String DEFAULT_PACKAGE = "com/kushnirenko/loaders/plugins/";
+    private static final String DEFAULT_FOLDER = "MultiThreading/plugins/";
     /**
      * This is a cache of loaded classes by this ClassLoader.
      */
@@ -109,18 +103,16 @@ public class PluginClassLoader extends ClassLoader {
          *  @see java.util.zip.ZipFile
          */
         JarFile jarFile = null;
-
         try {
-            jarFile = new JarFile("MultiThreading/plugins/" + pluginFileName);
-        } catch (IOException exp) {
-            log.error("Cannot find plugin with name: " + pluginFileName + ".");
-            log.error(exp.getStackTrace());
-            return;
+            jarFile = new JarFile(DEFAULT_FOLDER + pluginFileName);
+        } catch (IOException e) {
+            log.warn("Some troubles find class.");
         }
+
+
         /**
          * @see JarEntry
          */
-
         Enumeration<JarEntry> jarEntries = jarFile.entries();
         while (jarEntries.hasMoreElements()) {
             JarEntry jarEntry = jarEntries.nextElement();
@@ -129,13 +121,14 @@ public class PluginClassLoader extends ClassLoader {
             }
             if (jarEntry.getName().endsWith(".class")) {
                 byte[] classData = loadClassData(jarFile, jarEntry);
-                Class<?> clazz = defineClass(
-                        jarEntry.getName().replace('/', '.').substring(0, jarEntry.getName().length() - 6),
-                        classData, 0, classData.length, null);
+                String className = DEFAULT_PACKAGE + jarEntry.getName().substring(0, jarEntry.getName().length() - 6);
+                System.out.println(className);
+                Class<?> clazz = defineClass(className.replace('/', '.'), classData, 0, classData.length, null);
                 classCache.put(clazz.getName(), clazz);
             }
         }
     }
+
 
     /**
      * This method used to loading plugin classes *.jar from directory: plugins/
@@ -146,7 +139,7 @@ public class PluginClassLoader extends ClassLoader {
         /**
          * Getting a list of plugins.
          */
-        String[] jarlist = new File("MultiThreading/plugins/").list(new FilenameFilter() {
+        String[] jarlist = new File(DEFAULT_FOLDER).list(new FilenameFilter() {
             @Override
             public boolean accept(File file, String name) {
                 return name.toLowerCase().endsWith(".jar");
@@ -155,9 +148,19 @@ public class PluginClassLoader extends ClassLoader {
         /**
          * Load each plugin:
          */
-        for (String jarFile : jarlist) {
-            loadPlugin(jarFile);
+        for (String jarFileName : jarlist) {
+            loadPlugin(jarFileName);
         }
     }
+
+    public void loadPlugins(String packageToScan) {
+
+    }
+
+//    public static void main(String[] args) throws IOException {
+////        File file = new File(DEFAULT_PACKAGE);
+////        System.out.println(file.exists());
+//        JarFile jarFile = new JarFile(DEFAULT_FOLDER + "PluginImpl.jar0");
+//    }
 
 }

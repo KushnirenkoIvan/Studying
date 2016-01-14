@@ -15,7 +15,7 @@ public class AppRunner {
 
         loader.loadPlugins();
 
-        Plugin plugin = (Plugin) loader.loadClass("PluginImpl").newInstance();
+        Plugin plugin = (Plugin) loader.loadClass("com.kushnirenko.loaders.plugins.PluginImpl").newInstance();
         plugin.run();
     }
 
