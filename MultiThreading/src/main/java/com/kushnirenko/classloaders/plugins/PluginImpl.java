@@ -1,4 +1,4 @@
-package com.kushnirenko.loaders.plugins;
+package com.kushnirenko.classloaders.plugins;
 
 
 import org.apache.log4j.Logger;

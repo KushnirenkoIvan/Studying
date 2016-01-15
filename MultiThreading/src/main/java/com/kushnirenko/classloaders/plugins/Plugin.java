@@ -1,6 +1,6 @@
-package com.kushnirenko.loaders.plugins;
+package com.kushnirenko.classloaders.plugins;
 
-import com.kushnirenko.loaders.PluginClassLoader;
+import com.kushnirenko.classloaders.PluginClassLoader;
 
 /**
  * @see PluginClassLoader

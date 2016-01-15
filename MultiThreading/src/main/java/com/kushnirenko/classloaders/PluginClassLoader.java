@@ -1,4 +1,4 @@
-package com.kushnirenko.loaders;
+package com.kushnirenko.classloaders;
 
 
 import org.apache.log4j.Logger;
@@ -42,7 +42,7 @@ public class PluginClassLoader extends ClassLoader {
     /**
      * Default folder to scanning for plugins.
      */
-    private static final String DEFAULT_PACKAGE = "com/kushnirenko/loaders/plugins/";
+    private static final String DEFAULT_PACKAGE = "com/kushnirenko/classloaders/plugins/";
     private static final String DEFAULT_FOLDER = "MultiThreading/plugins/";
     /**
      * This is a cache of loaded classes by this ClassLoader.

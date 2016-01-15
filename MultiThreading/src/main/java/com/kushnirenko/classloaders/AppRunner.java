@@ -1,7 +1,7 @@
-package com.kushnirenko.loaders;
+package com.kushnirenko.classloaders;
 
 
-import com.kushnirenko.loaders.plugins.Plugin;
+import com.kushnirenko.classloaders.plugins.Plugin;
 
 import java.io.IOException;
 
