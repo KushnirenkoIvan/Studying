@@ -1,4 +1,4 @@
-package com.kushnirenko.loaders;
+package com.kushnirenko.classloaders;
 
 import java.util.jar.JarEntry;
 
