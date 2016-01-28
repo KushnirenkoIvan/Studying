@@ -13,6 +13,7 @@
         <module>RESTfullService</module>
         <module>JOOQ</module>
         <module>MultiThreading</module>
+        <module>Testing</module>
     </modules>
 
     <build>

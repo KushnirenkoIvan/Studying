@@ -36,7 +36,6 @@ public class Container {
         this.val = val;
     }
 
-
     public synchronized Boolean equal(Object obj) {
 
         Container con = null;

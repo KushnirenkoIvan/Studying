@@ -34,7 +34,7 @@ public class ANSIConsoleAppender extends ConsoleAppender {
     private static final String WARN_COLOUR = PREFIX
             + NORMAL + SEPARATOR + FOREGROUND_YELLOW + SUFFIX;
     private static final String INFO_COLOUR = PREFIX
-            + NORMAL + SEPARATOR + FOREGROUND_GREEN + SUFFIX;
+            + NORMAL + SEPARATOR + FOREGROUND_WHITE + SUFFIX;
     private static final String DEBUG_COLOUR = PREFIX
             + NORMAL + SEPARATOR + FOREGROUND_CYAN + SUFFIX;
     private static final String TRACE_COLOUR = PREFIX

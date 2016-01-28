@@ -13,7 +13,6 @@ public class CalculatorUtil {
 
     public static int sum(int a, int b) {
         int result = a + b;
-        log.info("Sum: " + a + " + " + b + " = " + result + ".");
         return result;
     }
 

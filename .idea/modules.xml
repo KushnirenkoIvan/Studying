@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JOOQ/JOOQ.iml" filepath="$PROJECT_DIR$/JOOQ/JOOQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/MultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/MultiThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/RESTfullService/RESTfullService.iml" filepath="$PROJECT_DIR$/RESTfullService/RESTfullService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Testing/Testing.iml" filepath="$PROJECT_DIR$/Testing/Testing.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying.iml" filepath="$PROJECT_DIR$/studying.iml" />
     </modules>
   </component>
