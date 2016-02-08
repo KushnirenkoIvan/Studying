@@ -20,7 +20,7 @@ public class Container {
 
     public Container() {
         val = DEFAULT_VALUE;
-        log.info("New Container was created, value set up to default.");
+        log.info("New Container was created, value set up to default: val = 0.");
     }
 
     public Container(int val) {
@@ -28,7 +28,8 @@ public class Container {
         log.info("New Container was created, value set up to: " + val + ".");
     }
 
-    public synchronized int getVal() {
+    public synchronized int getVal() throws InterruptedException {
+        Thread.currentThread().sleep(2000);
         return val;
     }
 
@@ -36,25 +37,11 @@ public class Container {
         this.val = val;
     }
 
-    public synchronized Boolean equal(Object obj) {
-
-        Container con = null;
-        try {
-            con = (Container) obj;
-        } catch (ClassCastException exp) {
-            log.error("Cannot cast " + obj.getClass() + " to Container.class;");
-            log.error("Comparison failed, return null.");
-            return null;
-        }
-        //This delay modelling hard comparison and need to emergence deadlock situation
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException exp) {
-            log.warn("Container comparison is interrupted!");
-            log.info(exp.getStackTrace());
-        }
-        log.info("Comparison success!");
-        return val == con.getVal();
+    @Override
+    public String toString() {
+        return "Container{" +
+                "val=" + val +
+                '}';
     }
 
 }
