@@ -7,7 +7,7 @@ function restGet() {
         dataType: 'json',
         async: true,
         success: function (result) {
-            console.log("id=" + result.user_id + "; user_name = " + result.user_name);
+            console.log("id=" + result.id + "; user_name = " + result.name);
         },
         error: function (jqXHR, textStatus, errorThrown) {
             alert(jqXHR.status + ' ' + jqXHR.responseText);

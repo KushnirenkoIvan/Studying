@@ -13,7 +13,7 @@
 
     <import resource="mvc-dispatcher-servlet.xml"/>
 
-    <context:component-scan base-package="org.rest"/>
+    <context:component-scan base-package="ua.kushnirenko"/>
 
     <mvc:resources mapping="/resources/**" location="/resources/"/>
     <!--<mvc:resources mapping="*.js" location="/resources/js/"/>-->

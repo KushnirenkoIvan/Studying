@@ -1,19 +1,11 @@
-package org.entities;
+package ua.kushnirenko.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import org.springframework.stereotype.Component;
-
-@Component
 public class User {
 
-    @JsonProperty("user_id")
     private Integer id;
 
-    @JsonProperty("user_name")
     private String name;
 
-    @JsonIgnore
     private Integer age;
 
     public Integer getId() {
@@ -47,15 +39,6 @@ public class User {
         this.id = id;
         this.name = name;
         this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age='" + age + '\'' +
-                '}';
     }
 
 }
