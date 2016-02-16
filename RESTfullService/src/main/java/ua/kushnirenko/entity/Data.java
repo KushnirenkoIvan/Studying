@@ -1,4 +1,4 @@
-package ua.kushnirenko.entities;
+package ua.kushnirenko.entity;
 
 public class Data {
 

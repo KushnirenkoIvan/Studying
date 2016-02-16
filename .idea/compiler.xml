@@ -45,10 +45,18 @@
         <processorPath useClasspath="true" />
         <module name="Testing" />
       </profile>
+      <profile default="false" name="Annotation profile for patterns" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="patterns" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JOOQ" target="1.8" />
       <module name="MultiThreading" target="1.8" />
+      <module name="patterns" target="1.8" />
       <module name="RESTfullService" target="1.8" />
       <module name="studying" target="1.8" />
       <module name="Testing" target="1.8" />

@@ -3,13 +3,12 @@ package ua.kushnirenko.util;
 import junit.framework.TestCase;
 import org.apache.log4j.Logger;
 import org.apache.log4j.NDC;
+import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.JUnitCore;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import ua.kushnirenko.MyTestListener;
 
 
 /**
@@ -26,6 +25,9 @@ public class CalculatorUtilTest extends TestCase {
 
     final static Logger log = Logger.getLogger("ua.kushnirenko.util.TESTLOGGER");
 
+    @Rule
+    public SimpleOnFailed simpleOnFailed = new SimpleOnFailed();
+
     @Test
     public void testSum() {
         for (int i = 0; i < 6; i++) {
@@ -41,10 +43,10 @@ public class CalculatorUtilTest extends TestCase {
     /**
      * You need to start with this method for applying custom listener.
      */
-    public static void main(String[] args) {
-        JUnitCore core = new JUnitCore();
-        core.addListener(new MyTestListener());
-        core.run(CalculatorUtilTest.class);
-    }
+//    public static void main(String[] args) {
+//        JUnitCore core = new JUnitCore();
+//        core.addListener(new MyTestListener());
+//        core.run(CalculatorUtilTest.class);
+//    }
 
 }
