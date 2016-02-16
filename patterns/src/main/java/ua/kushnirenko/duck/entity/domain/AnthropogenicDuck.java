@@ -1,5 +1,7 @@
 package ua.kushnirenko.duck.entity.domain;
 
+import ua.kushnirenko.duck.behaviour.FlyBehaviour;
+
 /**
  * author: ivan kushnirenko
  * <p/>
@@ -8,6 +10,16 @@ package ua.kushnirenko.duck.entity.domain;
 public abstract class AnthropogenicDuck extends Duck {
 
     private String material;
+
+    private FlyBehaviour flyBehaviour;
+
+    public FlyBehaviour getFlyBehaviour() {
+        return flyBehaviour;
+    }
+
+    public void setFlyBehaviour(FlyBehaviour flyBehaviour) {
+        this.flyBehaviour = flyBehaviour;
+    }
 
     public String getMaterial() {
         return material;

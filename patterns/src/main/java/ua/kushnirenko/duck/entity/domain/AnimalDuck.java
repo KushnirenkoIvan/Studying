@@ -1,5 +1,7 @@
 package ua.kushnirenko.duck.entity.domain;
 
+import ua.kushnirenko.duck.behaviour.FlyBehaviour;
+
 /**
  * author: ivan kushnirenko
  * <p/>
@@ -10,6 +12,8 @@ public abstract class AnimalDuck extends Duck {
     private Integer wingsLength;
 
     private Integer power;
+
+    private FlyBehaviour flyBehaviour;
 
     public Integer getWingsLength() {
         return wingsLength;
@@ -25,6 +29,14 @@ public abstract class AnimalDuck extends Duck {
 
     public void setPower(Integer power) {
         this.power = power;
+    }
+
+    public FlyBehaviour getFlyBehaviour() {
+        return flyBehaviour;
+    }
+
+    public void setFlyBehaviour(FlyBehaviour flyBehaviour) {
+        this.flyBehaviour = flyBehaviour;
     }
 
     @Override

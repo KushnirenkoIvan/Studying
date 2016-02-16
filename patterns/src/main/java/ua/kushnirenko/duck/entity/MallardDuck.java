@@ -1,6 +1,5 @@
 package ua.kushnirenko.duck.entity;
 
-import ua.kushnirenko.duck.behaviour.FlyBehaviour;
 import ua.kushnirenko.duck.behaviour.impl.FlyWithWings;
 import ua.kushnirenko.duck.entity.domain.AnimalDuck;
 
@@ -11,8 +10,6 @@ import ua.kushnirenko.duck.entity.domain.AnimalDuck;
  */
 public class MallardDuck extends AnimalDuck {
 
-    private FlyBehaviour flyBehaviour;
-
     private String region;
 
     public MallardDuck(Integer wingsLength, Integer power, String name, String region) {
@@ -20,12 +17,12 @@ public class MallardDuck extends AnimalDuck {
         this.setWingsLength(wingsLength);
         this.setPower(power);
         this.setName(name);
-        flyBehaviour = new FlyWithWings(this);
+        this.setFlyBehaviour(new FlyWithWings(this));
     }
 
 
     public void performFly() {
-        flyBehaviour.fly();
+        this.getFlyBehaviour().fly();
     }
 
     @Override
