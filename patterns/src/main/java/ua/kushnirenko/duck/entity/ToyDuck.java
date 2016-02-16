@@ -21,7 +21,7 @@ public class ToyDuck extends AnthropogenicDuck {
         this.price = price;
     }
 
-    public void fly() {
+    public void performFly() {
         flyBehaviour.fly();
     }
 

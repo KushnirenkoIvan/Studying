@@ -27,10 +27,6 @@ public abstract class AnimalDuck extends Duck {
         this.power = power;
     }
 
-    public void fly() {
-
-    }
-
     @Override
     public String toString() {
         return "AnimalDuck{" +

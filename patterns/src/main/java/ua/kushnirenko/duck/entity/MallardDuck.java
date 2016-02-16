@@ -23,8 +23,8 @@ public class MallardDuck extends AnimalDuck {
         flyBehaviour = new FlyWithWings(this);
     }
 
-    @Override
-    public void fly() {
+
+    public void performFly() {
         flyBehaviour.fly();
     }
 
