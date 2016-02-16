@@ -1,7 +1,7 @@
-package ua.kushnirenko.duck.entity;
+package ua.kushnirenko.strategy.entity;
 
-import ua.kushnirenko.duck.behaviour.impl.FlyWithWings;
-import ua.kushnirenko.duck.entity.domain.AnimalDuck;
+import ua.kushnirenko.strategy.behaviour.impl.FlyWithWings;
+import ua.kushnirenko.strategy.entity.domain.AnimalDuck;
 
 /**
  * author: ivan kushnirenko
@@ -19,7 +19,6 @@ public class MallardDuck extends AnimalDuck {
         this.setName(name);
         this.setFlyBehaviour(new FlyWithWings(this));
     }
-
 
     public void performFly() {
         this.getFlyBehaviour().fly();

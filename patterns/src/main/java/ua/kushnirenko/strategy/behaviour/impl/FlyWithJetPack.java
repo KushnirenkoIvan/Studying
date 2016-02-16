@@ -1,7 +1,7 @@
-package ua.kushnirenko.duck.behaviour.impl;
+package ua.kushnirenko.strategy.behaviour.impl;
 
-import ua.kushnirenko.duck.behaviour.FlyBehaviour;
-import ua.kushnirenko.duck.entity.ToyDuck;
+import ua.kushnirenko.strategy.behaviour.FlyBehaviour;
+import ua.kushnirenko.strategy.entity.ToyDuck;
 
 /**
  * author: ivan kushnirenko

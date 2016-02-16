@@ -1,4 +1,4 @@
-package ua.kushnirenko.duck.behaviour;
+package ua.kushnirenko.strategy.behaviour;
 
 /**
  * author: ivan kushnirenko
