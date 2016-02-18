@@ -1,7 +1,7 @@
-package ua.kushnirenko.strategy.service;
+package ua.kushnirenko.strategy.duck.service;
 
-import ua.kushnirenko.strategy.entity.MallardDuck;
-import ua.kushnirenko.strategy.entity.ToyDuck;
+import ua.kushnirenko.strategy.duck.entity.MallardDuck;
+import ua.kushnirenko.strategy.duck.entity.ToyDuck;
 
 /**
  * author: ivan kushnirenko

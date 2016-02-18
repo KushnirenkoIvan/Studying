@@ -1,4 +1,4 @@
-package ua.kushnirenko.strategy.entity.domain;
+package ua.kushnirenko.strategy.duck.entity.domain;
 
 /**
  * author: ivan kushnirenko

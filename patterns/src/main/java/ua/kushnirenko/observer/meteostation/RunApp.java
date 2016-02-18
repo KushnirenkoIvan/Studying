@@ -28,7 +28,6 @@ public class RunApp {
 
         afrika.setWindSpeed(20);
 
-
         d1.removeRegistration(alaska);
         System.out.println(d1);
         System.out.println(alaska);

@@ -1,6 +1,6 @@
-package ua.kushnirenko.strategy.entity.domain;
+package ua.kushnirenko.strategy.duck.entity.domain;
 
-import ua.kushnirenko.strategy.behaviour.FlyBehaviour;
+import ua.kushnirenko.strategy.duck.behaviour.FlyBehaviour;
 
 /**
  * author: ivan kushnirenko
