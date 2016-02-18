@@ -1,7 +1,7 @@
-package ua.kushnirenko.strategy.entity;
+package ua.kushnirenko.strategy.duck.entity;
 
-import ua.kushnirenko.strategy.behaviour.impl.FlyWithJetPack;
-import ua.kushnirenko.strategy.entity.domain.AnthropogenicDuck;
+import ua.kushnirenko.strategy.duck.behaviour.impl.FlyWithJetPack;
+import ua.kushnirenko.strategy.duck.entity.domain.AnthropogenicDuck;
 
 /**
  * author: ivan kushnirenko
