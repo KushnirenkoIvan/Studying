@@ -12,9 +12,9 @@
     <modules>
         <module>RESTfullService</module>
         <module>JOOQ</module>
-        <module>MultiThreading</module>
         <module>Testing</module>
         <module>patterns</module>
+        <module>multithreading</module>
     </modules>
 
     <build>

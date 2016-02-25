@@ -99,7 +99,7 @@ public class PluginClassLoader extends ClassLoader {
          * The Manifest can be used to specify meta-information about the jar file and its entries.
          * Unless otherwise noted, passing a null argument to a constructor or method in this class will
          *  cause a NullPointerException to be thrown.
-         *  @see java.util.jar.JarFile
+         *  @see JarFile
          *  @see java.util.zip.ZipFile
          */
         JarFile jarFile = null;

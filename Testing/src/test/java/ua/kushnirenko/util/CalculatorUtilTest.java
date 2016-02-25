@@ -40,13 +40,14 @@ public class CalculatorUtilTest extends TestCase {
         NDC.clear();
     }
 
-    /**
-     * You need to start with this method for applying custom listener.
-     */
-//    public static void main(String[] args) {
-//        JUnitCore core = new JUnitCore();
-//        core.addListener(new MyTestListener());
-//        core.run(CalculatorUtilTest.class);
-//    }
+    /*
+      You need to start with this method for applying custom listener.
+
+    public static void main(String[] args) {
+        JUnitCore core = new JUnitCore();
+        core.addListener(new MyTestListener());
+        core.run(CalculatorUtilTest.class);
+    }
+    */
 
 }
