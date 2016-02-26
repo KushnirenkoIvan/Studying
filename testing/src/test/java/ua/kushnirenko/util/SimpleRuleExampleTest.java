@@ -10,9 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static org.junit.Assert.assertTrue;
 
 /**
- * author: ivan kushnirenko
- * <p/>
- * date: 10.02.16
+ * Working with custom rules have been written by me.
  */
 @ContextConfiguration(classes = SimpleOnFailed.class)
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -28,7 +26,6 @@ public class SimpleRuleExampleTest {
         log.trace("Should pass method starts...");
         StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
         StackTraceElement element = stackTraceElements[stackTraceElements.length - 1];
-        String testMethodInfo = element.getClassName() + ":" + element.getMethodName();
         log.warn("Be careful...");
         log.debug("not bad... I think, i can do it.");
         assertTrue(true);

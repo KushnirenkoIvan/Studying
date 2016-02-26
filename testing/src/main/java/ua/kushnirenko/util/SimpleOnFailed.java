@@ -4,9 +4,7 @@ import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
 /**
- * author: ivan kushnirenko
- * <p/>
- * date: 10.02.16
+ * Custom rule for testing.
  */
 
 public class SimpleOnFailed extends TestWatcher {
