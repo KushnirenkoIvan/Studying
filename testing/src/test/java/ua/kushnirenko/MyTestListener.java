@@ -5,6 +5,7 @@ import org.junit.runner.Description;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;
 
+
 /**
  * This class customize ordinary JUnit RunListener.
  */

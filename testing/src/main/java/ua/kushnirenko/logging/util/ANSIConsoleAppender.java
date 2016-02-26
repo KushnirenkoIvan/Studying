@@ -5,6 +5,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Priority;
 import org.apache.log4j.spi.LoggingEvent;
 
+
 /**
  * Custom Appender for log4j, i`ve found it in the internet.
  */
