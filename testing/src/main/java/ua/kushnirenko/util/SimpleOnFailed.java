@@ -3,10 +3,10 @@ package ua.kushnirenko.util;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
+
 /**
  * Custom rule for testing.
  */
-
 public class SimpleOnFailed extends TestWatcher {
 
 

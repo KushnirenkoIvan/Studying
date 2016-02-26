@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 import ua.kushnirenko.architecture.user.domain.User;
 
+
 @Repository
 public class UserDAOImpl implements UserDAO {
 

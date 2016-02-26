@@ -1,5 +1,6 @@
 package ua.kushnirenko.architecture.user.domain;
 
+
 public class User {
 
     private Long id;

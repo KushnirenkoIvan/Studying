@@ -2,6 +2,7 @@ package ua.kushnirenko.architecture.user.dao;
 
 import ua.kushnirenko.architecture.user.domain.User;
 
+
 public interface UserDAO {
 
     Long create(User user);

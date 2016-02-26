@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import ua.kushnirenko.architecture.user.dao.UserDAO;
 import ua.kushnirenko.architecture.user.domain.User;
 
+
 @Service
 public class UserServiceImpl implements UserService {
 
