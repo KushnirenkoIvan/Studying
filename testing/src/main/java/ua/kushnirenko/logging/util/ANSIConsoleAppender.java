@@ -6,9 +6,7 @@ import org.apache.log4j.Priority;
 import org.apache.log4j.spi.LoggingEvent;
 
 /**
- * author: ivan kushnirenko
- * <p/>
- * date: 26.01.16
+ * Custom Appender for log4j, i`ve found it in the internet.
  */
 public class ANSIConsoleAppender extends ConsoleAppender {
     private static final int NORMAL = 0;

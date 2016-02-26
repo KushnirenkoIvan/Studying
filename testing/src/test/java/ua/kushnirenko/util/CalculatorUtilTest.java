@@ -12,9 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 
 /**
- * author: ivan kushnirenko
- * <p/>
- * date: 25.01.16
+ * Simple test.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = CalculatorUtil.class)

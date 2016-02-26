@@ -5,9 +5,7 @@ import org.junit.runner.Runner;
 import org.junit.runner.notification.RunNotifier;
 
 /**
- * author: ivan kushnirenko
- * <p/>
- * date: 25.01.16
+ * Simple example of custom 'testRunner' class.
  */
 public class MyTestRunner extends Runner {
     @Override

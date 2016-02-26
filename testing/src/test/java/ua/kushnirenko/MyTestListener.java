@@ -6,12 +6,7 @@ import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;
 
 /**
- * author: ivan kushnirenko
- * <p/>
- * date: 28.01.16
- *
- * This class customize standart JUnit RunListener.
- *
+ * This class customize ordinary JUnit RunListener.
  */
 public class MyTestListener extends RunListener {
 

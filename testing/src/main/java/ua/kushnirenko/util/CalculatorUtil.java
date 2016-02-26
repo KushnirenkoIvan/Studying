@@ -1,12 +1,13 @@
 package ua.kushnirenko.util;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
+
 
 /**
- * author: ivan kushnirenko
- * <p/>
- * date: 25.01.16
+ * This class is so simple, so we don't need to write something here)
  */
+@Component
 public class CalculatorUtil {
 
     public static Logger log = Logger.getLogger(CalculatorUtil.class);

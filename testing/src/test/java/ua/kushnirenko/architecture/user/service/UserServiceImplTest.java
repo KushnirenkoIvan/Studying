@@ -1,7 +1,6 @@
 package ua.kushnirenko.architecture.user.service;
 
 import junit.framework.TestCase;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -15,6 +14,10 @@ import ua.kushnirenko.architecture.user.domain.User;
 
 import static org.mockito.Mockito.*;
 
+
+/**
+ * Simple example of behaviour test for service layer.
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class UserServiceImplTest extends TestCase {
 
@@ -22,7 +25,7 @@ public class UserServiceImplTest extends TestCase {
 
     @InjectMocks
     @Autowired
-    private UserService userService;
+    private UserServiceImpl userService;
 
     @Mock
     private UserDAO userDAOMock;
@@ -45,7 +48,6 @@ public class UserServiceImplTest extends TestCase {
         setUpIsDone = true;
     }
 
-    @Ignore
     @Test
     public void testFindUserById() {
         assertEquals(testUser, userService.findUserById(123L));
