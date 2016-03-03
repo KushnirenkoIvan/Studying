@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
+//@RequestMapping("/jsp")
 public class StartController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getStartPage() {
-        return "hello";
+        return "redirect:/html/login.html";
     }
 
 }

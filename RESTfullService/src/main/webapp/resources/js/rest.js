@@ -3,7 +3,7 @@
 function restGet() {
     $.ajax({
         type: 'GET',
-        url: 'getUser',
+        url: '/getUser',
         dataType: 'json',
         async: true,
         success: function (result) {
@@ -18,7 +18,7 @@ function restGet() {
 var restPut = function () {
     $.ajax({
         type: 'PUT',
-        url: 'putData',
+        url: '/putData',
         contentType: 'application/json; charset=utf-8',
         data: JSON.stringify(new User(22, 'vasiliy')),
         dataType: 'json',
@@ -36,7 +36,7 @@ var restPut = function () {
 function restPost() {
     $.ajax({
         type: 'POST',
-        url: 'postData',
+        url: '/postData',
         contentType: 'application/json; charset=utf-8',
         data: JSON.stringify(new User(12234, 'name')),
         dataType: 'json',
@@ -53,7 +53,7 @@ function restPost() {
 function restDelete() {
     $.ajax({
         type: 'DELETE',
-        url: 'deleteData/' + 'value to delete',
+        url: '/deleteData/' + 'value to delete',
         dataType: 'json',
         async: true,
         success: function (result) {
