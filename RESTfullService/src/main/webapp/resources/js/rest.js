@@ -68,5 +68,23 @@ function restDelete() {
 function User(id, name) {
     this.user_id = id;
     this.user_name = name;
+}
 
+function loginWithNameAndPassword() {
+
+    var testName = 'admin';
+    var password = 'krutoi_syslik'
+
+    $.ajax({
+        type: 'GET',
+        url: '/user/findByName/' + testName + '/pwd/' + password,
+        contentType: 'multipart/form-data',
+        async: true,
+        success: function (result) {
+            console.log(result);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status + ' ' + jqXHR.responseText);
+        }
+    });
 }
