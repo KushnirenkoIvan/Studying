@@ -1,0 +1,28 @@
+body {
+    background: #cfcfcf;
+}
+
+#divArea {
+    position: relative;
+    margin: 10% auto;
+    width: 1100px;
+    height: 400px;
+    padding: 10px;
+    background: #bdcfa0;
+    border:solid #4C4C4C;
+    border-radius: 10px;
+    text-align: center;
+}
+.response-container {
+    text-align: left;
+}
+
+#button {
+    position: absolute;
+    margin-left: -135px;
+    width: 270px;
+    height: 60px;
+    background: cornflowerblue;
+    bottom: 10px;
+}
+
