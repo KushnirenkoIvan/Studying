@@ -15,6 +15,7 @@
         <module>patterns</module>
         <module>multithreading</module>
         <module>testing</module>
+        <module>jmx-demo</module>
     </modules>
 
     <build>
