@@ -4,7 +4,7 @@
 
     <groupId>ua.fiscal.systems</groupId>
     <artifactId>jmx-demo</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>jmx-demo</name>
@@ -18,7 +18,9 @@
     </parent>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/KushnirenkoIvan/studying.git</developerConnection>
+        <connection>scm:git:git://github.com/KushnirenkoIvan/studying</connection>
+        <developerConnection>scm:git:git://github.com/KushnirenkoIvan/studying</developerConnection>
+        <url>scm:git:git://github.com/KushnirenkoIvan/studying</url>
     <tag>-</tag>
   </scm>
 
