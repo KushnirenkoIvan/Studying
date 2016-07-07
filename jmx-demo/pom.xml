@@ -20,7 +20,7 @@
     <scm>
         <!--<connection>scm:git:https://github.com:KushnirenkoIvan/studying</connection>-->
         <developerConnection>scm:git:https://github.com:KushnirenkoIvan/studying</developerConnection>
-        <!--<url>scm:git:https://github.com:KushnirenkoIvan/studying</url>-->
+        <url>scm:git:https://github.com:KushnirenkoIvan/studying</url>
     <tag>jmx-demo-0.0.1</tag>
   </scm>
 
