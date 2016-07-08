@@ -4,7 +4,7 @@
 
     <groupId>ua.fiscal.systems</groupId>
     <artifactId>jmx-demo</artifactId>
-    <version>0.0.8</version>
+    <version>0.0.9-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>jmx-demo</name>
@@ -24,7 +24,7 @@
         <!--<developerConnection>scm:git:[fetch=]git:git@github.com:KushnirenkoIvan/studying.git-->
             <!--[push=]file://localhost/home/ivan/JAVA/testRepo/studying-->
         <!--</developerConnection>-->
-    <tag>latest_tag</tag>
+    <tag>HEAD</tag>
   </scm>
 
     <properties>
