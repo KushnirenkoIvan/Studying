@@ -17,14 +17,13 @@
         <relativePath />
     </parent>
 
-
     <scm>
-        <!--<url>https://github.com/KushnirenkoIvan/studying</url>-->
-        <!--<connection>scm:git:git://github.com/KushnirenkoIvan/studying.git</connection>-->
-        <!--<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>-->
-        <developerConnection>scm:git:[fetch=]git:git@github.com:KushnirenkoIvan/studying.git
-            [push=]file://localhost/home/ivan/JAVA/testRepo/studying
-        </developerConnection>
+        <url>https://github.com/KushnirenkoIvan/studying</url>
+        <connection>scm:git:git://github.com/KushnirenkoIvan/studying.git</connection>
+        <developerConnection>scm:git:git@github.com:KushnirenkoIvan/studying.git</developerConnection>
+        <!--<developerConnection>scm:git:[fetch=]git:git@github.com:KushnirenkoIvan/studying.git-->
+            <!--[push=]file://localhost/home/ivan/JAVA/testRepo/studying-->
+        <!--</developerConnection>-->
     <tag>HEAD</tag>
   </scm>
 
