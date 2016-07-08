@@ -19,10 +19,9 @@
 
 
     <scm>
-        <developerConnection>scm:git:[fetch=]git:git@github.com:KushnirenkoIvan/studying.git
+        <developerConnection>scm:git:[fetch=]git:git@github.com:KushnirenkoIvan/studying
             [push=]file://localhost/home/ivan/JAVA/testRepo/studying
         </developerConnection>
-      <tag>HEAD</tag>
   </scm>
 
     <properties>
