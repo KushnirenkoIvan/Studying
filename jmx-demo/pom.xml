@@ -23,7 +23,6 @@
         <!--<url>https://github.com/KushnirenkoIvan/studying</url>-->
         <!--<connection>scm:git:git://github.com/KushnirenkoIvan/studying.git</connection>-->
         <developerConnection>scm:git:git@github.com:KushnirenkoIvan/studying.git</developerConnection>
-        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
