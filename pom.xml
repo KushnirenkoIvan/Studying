@@ -15,6 +15,8 @@
         <module>patterns</module>
         <module>multithreading</module>
         <module>testing</module>
+        <module>m.fowler_refactoring</module>
+        <module>apache_orc</module>
     </modules>
 
     <build>
